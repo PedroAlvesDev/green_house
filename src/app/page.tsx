@@ -1,7 +1,8 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Menu from "./Menu/page";
-import { SignNewsletter } from "./Newsletter/page";
+"use client";
+
+import Menu from "../components/Menu/Menu";
+import { SignNewsletter } from "../components/Newsletter/Newsletter";
+
 
 export default function Home() {
   return (
