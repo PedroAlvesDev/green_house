@@ -6,7 +6,7 @@ import { SignNewsletter } from "../components/Newsletter/Newsletter";
 
 export default function Home() {
   return (
-    <main>
+    <main >
       <Menu />
       <SignNewsletter />
     </main>
