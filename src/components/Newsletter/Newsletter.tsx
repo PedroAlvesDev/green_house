@@ -1,41 +1,46 @@
+"use client";
+
 import "./Newsletter.styles.ts"
+import { Newsletter, Home, H1, Strong, P, Steps, Button, Form, Input, List, ListItem, Offers, Sign } from "./Newsletter.styles"
+import { elsie, montserrat } from "@/styles/fonts"
 
 export function SignNewsletter() {
     return (
-        <div>
-            <div className="home">
-                <h1>Sua casa com as
+        <Newsletter className={`${montserrat.className}`}>
+            <Home>
+                <H1>Sua casa com as
                     <br />
-                    <strong>melhores plantas</strong></h1>
+                    <Strong className={`${elsie.className}`}>melhores plantas</Strong>
+                </H1>
 
-                <p>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
-            </div>
+                <P>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</P>
+            </Home>
 
 
-            <div className="sign">
-                <form>
-                    <input type="e-mail" placeholder="Insira seu e-mail" />
-                    <button>Assinar newsletter</button>
-                </form>
-            </div>
+            <Sign>
+                <Form>
+                    <Input type="e-mail" placeholder="Insira seu e-mail" />
+                    <Button>Assinar newsletter</Button>
+                </Form>
+            </Sign>
 
-            <div className="steps">
-                <h1>Como conseguir <br />
-                    <strong>minha planta</strong>
-                    <ul>
-                        <li>Escolha suas plantas</li>
-                        <li>Faça seu pedido</li>
-                        <li>Aguarde na sua casa</li>
-                    </ul>
-                </h1>
-            </div>
+            <Steps>
+                <H1>Como conseguir <br />
+                    <Strong className={`${elsie.className}`}>minha planta</Strong>
+                    <List>
+                        <ListItem>Escolha suas plantas</ListItem>
+                        <ListItem>Faça seu pedido</ListItem>
+                        <ListItem>Aguarde na sua casa</ListItem>
+                    </List>
+                </H1>
+            </Steps>
 
-            <div className="offers">
-                <h1>Conheça nossas <br />
-                    <strong>ofertas</strong>
-                </h1>
-            </div>
-        </div>
+            <Offers>
+                <H1>Conheça nossas <br />
+                    <Strong className={`${elsie.className}`}>ofertas</Strong>
+                </H1>
+            </Offers>
+        </Newsletter>
 
 
     )

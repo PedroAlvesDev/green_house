@@ -1,6 +1,7 @@
 "use client";
 
 import { Header, Logo, Nav, List, ListItem, Link } from "./Menu.styles";
+import { montserrat } from "@/styles/fonts";
 
 export default function Menu() {
     return (
@@ -9,8 +10,8 @@ export default function Menu() {
                 <img src="/images/logo.svg" alt="" />
             </Logo>
 
-            <Nav>
-                <List>
+            <Nav className={`${montserrat.className} `}>
+                <List style={{color:"#202020"}}>
                     <ListItem>
                         <Link href="">Como fazer</Link>
                         /
