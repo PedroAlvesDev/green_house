@@ -7,7 +7,7 @@ export default function Menu() {
     return (
         <Header>
             <Logo>
-                <img src="/images/logo.svg" alt="" />
+                <img src="/logo.svg" alt="" />
             </Logo>
 
             <Nav className={`${montserrat.className} `}>

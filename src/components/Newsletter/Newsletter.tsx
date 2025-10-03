@@ -1,12 +1,25 @@
 "use client";
 
 import "./Newsletter.styles.ts"
-import { Newsletter, Home, H1, Strong, P, Steps, Button, Form, Input, List, ListItem, Offers, Sign } from "./Newsletter.styles"
+import { Newsletter, Home, H1, Strong, P, Steps, Button, Form, Input, List, ListItem, Offers, Sign, Products, ProductsItem, BuyButton, Text } from "./Newsletter.styles"
 import { elsie, montserrat } from "@/styles/fonts"
+import Image from "next/image.js";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import Ajuga from "../../../public/ajuga.png";
+import Cordyline from "../../../public/cordeline.png";
+import Crassula from "../../../public/crassula.png";
+import Cyperus from "../../../public/cyperus.png";
+import Delairea from "../../../public/delairea.png";
+import Datura from "../../../public/datura.png";
+import Hero from "../../../public/imagem-hero.png"
+
 
 export function SignNewsletter() {
     return (
         <Newsletter className={`${montserrat.className}`}>
+
+
             <Home>
                 <H1>Sua casa com as
                     <br />
@@ -22,6 +35,12 @@ export function SignNewsletter() {
                     <Input type="e-mail" placeholder="Insira seu e-mail" />
                     <Button>Assinar newsletter</Button>
                 </Form>
+                <Image
+                    src={Hero}
+                    alt="Image Hero"
+                    width={700}
+                    height={700}
+                />
             </Sign>
 
             <Steps>
@@ -39,9 +58,124 @@ export function SignNewsletter() {
                 <H1>Conheça nossas <br />
                     <Strong className={`${elsie.className}`}>ofertas</Strong>
                 </H1>
+
+                <Products>
+                    <ProductsItem>
+                        <Image
+                            src={Ajuga}
+                            alt="Ajuga reptans"
+                            width={120}
+                            height={120}
+                        />
+                        <Text className={montserrat.className}>
+                            <h3 className={elsie.className}>Ajuga reptans
+                            </h3>
+                            <span>R$ 20,00</span>
+                            <BuyButton>
+                                Comprar
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </BuyButton>
+                        </Text>
+
+                    </ProductsItem>
+
+                    <ProductsItem>
+                        <Image
+                            src={Cordyline}
+                            alt="Cordyline fruticosa"
+                            width={120}
+                            height={120}
+                        />
+                        <Text className={montserrat.className}>
+                            <h3 className={elsie.className}>Cordyline fruticosa
+                            </h3>
+                            <span>R$ 20,00</span>
+                            <BuyButton>
+                                Comprar
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </BuyButton>
+                        </Text>
+
+                    </ProductsItem>
+
+                    <ProductsItem>
+                        <Image
+                            src={Crassula}
+                            alt="Crassula ovata"
+                            width={120}
+                            height={120}
+                        />
+                        <Text className={montserrat.className}>
+                            <h3 className={elsie.className}>Crassula ovata
+                            </h3>
+                            <span>R$ 20,00</span>
+                            <BuyButton>
+                                Comprar
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </BuyButton>
+                        </Text>
+
+                    </ProductsItem>
+
+                    <ProductsItem>
+                        <Image
+                            src={Cyperus}
+                            alt="Cyperus rotundus"
+                            width={120}
+                            height={120}
+                        />
+                        <Text className={montserrat.className}>
+                            <h3 className={elsie.className}>Cyperus rotundus
+                            </h3>
+                            <span>R$ 20,00</span>
+                            <BuyButton>
+                                Comprar
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </BuyButton>
+                        </Text>
+
+                    </ProductsItem>
+
+                    <ProductsItem>
+                        <Image
+                            src={Delairea}
+                            alt="Delairea odorata"
+                            width={120}
+                            height={120}
+                        />
+                        <Text className={montserrat.className}>
+                            <h3 className={elsie.className}>Delairea odorata
+                            </h3>
+                            <span>R$ 20,00</span>
+                            <BuyButton>
+                                Comprar
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </BuyButton>
+                        </Text>
+
+                    </ProductsItem>
+
+                    <ProductsItem>
+                        <Image
+                            src={Datura}
+                            alt="Datura metel"
+                            width={120}
+                            height={120}
+                        />
+                        <Text className={montserrat.className}>
+                            <h3 className={elsie.className}>Datura metel
+                            </h3>
+                            <span>R$ 20,00</span>
+                            <BuyButton>
+                                Comprar
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </BuyButton>
+                        </Text>
+
+                    </ProductsItem>
+                </Products>
             </Offers>
         </Newsletter>
-
 
     )
 }

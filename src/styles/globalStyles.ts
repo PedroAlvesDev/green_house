@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
 body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
   margin: 0;
+  background-color: #fafafa;
 }
 
 ul, ol {
